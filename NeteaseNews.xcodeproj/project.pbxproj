@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D96CB4101CBC9AF600C87D74 /* MDRRightMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96CB40E1CBC9AF600C87D74 /* MDRRightMenuController.m */; };
+		D96CB4111CBC9AF600C87D74 /* MDRRightMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96CB40F1CBC9AF600C87D74 /* MDRRightMenuController.xib */; };
 		D9B90A221CBA03C000E517BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B90A211CBA03C000E517BE /* main.m */; };
 		D9B90A2D1CBA03C000E517BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B90A2C1CBA03C000E517BE /* Assets.xcassets */; };
 		D9B90A301CBA03C000E517BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B90A2E1CBA03C000E517BE /* LaunchScreen.storyboard */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D96CB40D1CBC9AF600C87D74 /* MDRRightMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRRightMenuController.h; sourceTree = "<group>"; };
+		D96CB40E1CBC9AF600C87D74 /* MDRRightMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRRightMenuController.m; sourceTree = "<group>"; };
+		D96CB40F1CBC9AF600C87D74 /* MDRRightMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDRRightMenuController.xib; sourceTree = "<group>"; };
 		D9B90A1D1CBA03C000E517BE /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B90A211CBA03C000E517BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9B90A2C1CBA03C000E517BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 				D9B90A611CBA1B7E00E517BE /* MDRNewsListController.m */,
 				D9B90A661CBA32DE00E517BE /* MDRReadingListController.h */,
 				D9B90A671CBA32DE00E517BE /* MDRReadingListController.m */,
+				D96CB40D1CBC9AF600C87D74 /* MDRRightMenuController.h */,
+				D96CB40E1CBC9AF600C87D74 /* MDRRightMenuController.m */,
+				D96CB40F1CBC9AF600C87D74 /* MDRRightMenuController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 			files = (
 				D9B90A301CBA03C000E517BE /* LaunchScreen.storyboard in Resources */,
 				D9B90A2D1CBA03C000E517BE /* Assets.xcassets in Resources */,
+				D96CB4111CBC9AF600C87D74 /* MDRRightMenuController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B90A681CBA32DE00E517BE /* MDRReadingListController.m in Sources */,
+				D96CB4101CBC9AF600C87D74 /* MDRRightMenuController.m in Sources */,
 				D9B90A591CBA1AD500E517BE /* UIView+MDR_Ex.m in Sources */,
 				D9B90A581CBA1AD500E517BE /* UIImage+MDR_Ex.m in Sources */,
 				D9B90A621CBA1B7E00E517BE /* MDRNewsListController.m in Sources */,
