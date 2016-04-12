@@ -10,4 +10,6 @@
 
 @interface MDRRightMenuController : UIViewController
 
+- (void)iconViewStartAnimating;
+
 @end

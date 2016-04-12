@@ -24,11 +24,12 @@
 
 @property (nonatomic, weak) MDRNavigationController *showingNav;
 
-// 右侧菜单栏
-@property (nonatomic, weak) UIView *rightMenuView;
 
 // 左侧菜单栏
 @property (nonatomic, weak) UIView *leftMenuView;
+
+// 右侧菜单控制器
+@property (nonatomic, strong) MDRRightMenuController *rightMenuVc;
 
 @end
 
@@ -154,14 +155,13 @@
     [self.view addSubview:rightMenuVc.view];
     [self.view addSubview:rightMenuVc.view];
     
-    _rightMenuView = rightMenuVc.view;
-
+    _rightMenuVc = rightMenuVc;
 }
 
 #pragma mark - 显示左侧菜单
 - (void)leftItemClick {
     
-    self.rightMenuView.hidden = YES;
+    self.rightMenuVc.view.hidden = YES;
     self.leftMenuView.hidden = NO;
     
     CGAffineTransform form = self.showingNav.view.transform;
@@ -211,7 +211,7 @@
 #pragma mark - 显示右侧菜单
 - (void)rigthItemClick {
     
-    self.rightMenuView.hidden = NO;
+    self.rightMenuVc.view.hidden = NO;
     self.leftMenuView.hidden = YES;
     
     CGAffineTransform form = self.showingNav.view.transform;
@@ -227,7 +227,7 @@
         
         // 1.3 平移
         CGFloat distanceY = self.showingNav.view.height * (1 - scale) * 0.5 - MDRLeftMenuY;
-        CGFloat distanceX = self.rightMenuView.width - self.showingNav.view.width * (1 - scale) * 0.5;
+        CGFloat distanceX = self.rightMenuVc.view.width - self.showingNav.view.width * (1 - scale) * 0.5;
         
         // 1.4 需要形变的数据
         form = CGAffineTransformTranslate(form, -distanceX / scale, distanceY / scale);
@@ -252,6 +252,9 @@
         
         self.showingNav.view.transform = form;
         
+    } completion:^(BOOL finished) {
+        // 开始做动画
+        [self.rightMenuVc iconViewStartAnimating];
     }];
 
 }
