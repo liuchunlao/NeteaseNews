@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D96CB4101CBC9AF600C87D74 /* MDRRightMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96CB40E1CBC9AF600C87D74 /* MDRRightMenuController.m */; };
 		D96CB4111CBC9AF600C87D74 /* MDRRightMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96CB40F1CBC9AF600C87D74 /* MDRRightMenuController.xib */; };
+		D96CB4161CBCD17C00C87D74 /* MDRRightMenuCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D96CB4151CBCD17C00C87D74 /* MDRRightMenuCenterButton.m */; };
+		D96CB4181CBCD18900C87D74 /* MDRRightMenuCenterButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96CB4171CBCD18900C87D74 /* MDRRightMenuCenterButton.xib */; };
+		D96CB41B1CBCDA4F00C87D74 /* MDRRightMenuCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D96CB41A1CBCDA4F00C87D74 /* MDRRightMenuCenterView.m */; };
 		D9B90A221CBA03C000E517BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B90A211CBA03C000E517BE /* main.m */; };
 		D9B90A2D1CBA03C000E517BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B90A2C1CBA03C000E517BE /* Assets.xcassets */; };
 		D9B90A301CBA03C000E517BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B90A2E1CBA03C000E517BE /* LaunchScreen.storyboard */; };
@@ -27,6 +30,11 @@
 		D96CB40D1CBC9AF600C87D74 /* MDRRightMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRRightMenuController.h; sourceTree = "<group>"; };
 		D96CB40E1CBC9AF600C87D74 /* MDRRightMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRRightMenuController.m; sourceTree = "<group>"; };
 		D96CB40F1CBC9AF600C87D74 /* MDRRightMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDRRightMenuController.xib; sourceTree = "<group>"; };
+		D96CB4141CBCD17C00C87D74 /* MDRRightMenuCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRRightMenuCenterButton.h; sourceTree = "<group>"; };
+		D96CB4151CBCD17C00C87D74 /* MDRRightMenuCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRRightMenuCenterButton.m; sourceTree = "<group>"; };
+		D96CB4171CBCD18900C87D74 /* MDRRightMenuCenterButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDRRightMenuCenterButton.xib; sourceTree = "<group>"; };
+		D96CB4191CBCDA4F00C87D74 /* MDRRightMenuCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRRightMenuCenterView.h; sourceTree = "<group>"; };
+		D96CB41A1CBCDA4F00C87D74 /* MDRRightMenuCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRRightMenuCenterView.m; sourceTree = "<group>"; };
 		D9B90A1D1CBA03C000E517BE /* NeteaseNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B90A211CBA03C000E517BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9B90A2C1CBA03C000E517BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +173,11 @@
 			children = (
 				D9B90A561CBA1AD500E517BE /* MDRLeftMenuView.h */,
 				D9B90A571CBA1AD500E517BE /* MDRLeftMenuView.m */,
+				D96CB4141CBCD17C00C87D74 /* MDRRightMenuCenterButton.h */,
+				D96CB4151CBCD17C00C87D74 /* MDRRightMenuCenterButton.m */,
+				D96CB4171CBCD18900C87D74 /* MDRRightMenuCenterButton.xib */,
+				D96CB4191CBCDA4F00C87D74 /* MDRRightMenuCenterView.h */,
+				D96CB41A1CBCDA4F00C87D74 /* MDRRightMenuCenterView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96CB4181CBCD18900C87D74 /* MDRRightMenuCenterButton.xib in Resources */,
 				D9B90A301CBA03C000E517BE /* LaunchScreen.storyboard in Resources */,
 				D9B90A2D1CBA03C000E517BE /* Assets.xcassets in Resources */,
 				D96CB4111CBC9AF600C87D74 /* MDRRightMenuController.xib in Resources */,
@@ -240,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96CB4161CBCD17C00C87D74 /* MDRRightMenuCenterButton.m in Sources */,
 				D9B90A681CBA32DE00E517BE /* MDRReadingListController.m in Sources */,
+				D96CB41B1CBCDA4F00C87D74 /* MDRRightMenuCenterView.m in Sources */,
 				D96CB4101CBC9AF600C87D74 /* MDRRightMenuController.m in Sources */,
 				D9B90A591CBA1AD500E517BE /* UIView+MDR_Ex.m in Sources */,
 				D9B90A581CBA1AD500E517BE /* UIImage+MDR_Ex.m in Sources */,

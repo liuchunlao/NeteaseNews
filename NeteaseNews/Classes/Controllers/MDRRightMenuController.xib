@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDRRightMenuController">
             <connections>
+                <outlet property="centerView" destination="Bif-dU-RBP" id="S7v-y7-QPO"/>
                 <outlet property="iconView" destination="gB3-S3-cqL" id="lKW-9D-yS9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -49,13 +50,24 @@
                         <constraint firstItem="hxc-Us-ygd" firstAttribute="top" secondItem="gB3-S3-cqL" secondAttribute="bottom" constant="8" id="kru-0A-9PE"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-dU-RBP" customClass="MDRRightMenuCenterView">
+                    <rect key="frame" x="30" y="192" width="240" height="135"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="V1u-QD-wWQ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Bif-dU-RBP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="2Zm-zv-BcX"/>
+                <constraint firstAttribute="trailing" secondItem="Bif-dU-RBP" secondAttribute="trailing" constant="30" id="Jng-mV-UkJ"/>
                 <constraint firstItem="gy4-T0-oA9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="USP-5j-OJd"/>
                 <constraint firstItem="gy4-T0-oA9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WeG-xR-3Uf"/>
                 <constraint firstItem="gy4-T0-oA9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cOt-xp-Tvt"/>
                 <constraint firstAttribute="trailing" secondItem="gy4-T0-oA9" secondAttribute="trailing" id="e8x-cc-Wuo"/>
+                <constraint firstItem="Bif-dU-RBP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="les-hM-xgi"/>
+                <constraint firstItem="Bif-dU-RBP" firstAttribute="top" secondItem="gy4-T0-oA9" secondAttribute="bottom" constant="35" id="wXb-dt-57p"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

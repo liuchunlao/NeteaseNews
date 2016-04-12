@@ -12,14 +12,18 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *iconView;
 
+@property (nonatomic, weak) IBOutlet UIView *centerView;
+
 @end
 
 @implementation MDRRightMenuController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
 }
+
+
 
 #pragma mark - 让头像做动画
 - (void)iconViewStartAnimating {
